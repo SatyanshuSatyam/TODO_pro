@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.task-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.task-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.task-exit {
+  opacity: 1;
+}
+
+.task-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dragging {
+  opacity: 0.5;
+  background-color: rgba(76, 175, 80, 0.1);
+}
