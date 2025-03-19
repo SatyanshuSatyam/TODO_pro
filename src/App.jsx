@@ -14,6 +14,8 @@ function App() {
   const { mode } = useSelector((state) => state.theme);
   const { isAuthenticated } = useSelector((state) => state.auth);
 
+
+  
   const theme = createTheme({
     palette: {
       mode,
